@@ -1,0 +1,88 @@
+$number-of-items: 13; // Remplacez par la longueur de iconsStack si nécessaire
+$circle-radius: 600px; // Rayon du cercle
+$item-size: calc($circle-radius / 7); // Taille des éléments
+
+.skills {
+    position: relative;
+    @include flex(column, flex-start, center);
+    width: 100%;
+    max-width: 900px;
+    height: 580px;
+    margin: 20px 0 0;
+    padding: 80px;
+    overflow: hidden;
+
+    &__title {
+        @include font-section-sub-title;
+    }
+
+    &__container {
+        position: absolute;
+        top: 230px;
+        @include flex(row, center, center);
+        width: $circle-radius;
+        height: $circle-radius;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: calc($circle-radius + $item-size / 2);
+            height: calc($circle-radius + $item-size / 2);
+            border: 3px double #ccc;
+            border-radius: 50%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: calc($circle-radius - $item-size / 2);
+            height: calc($circle-radius - $item-size / 2);
+            border: 3px double #ccc;
+            border-radius: 50%;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        width: $item-size; // Ajustez la taille selon vos besoins
+        height: $item-size; // Ajustez la taille selon vos besoins
+        @include flex(column, center, center);
+        transition: transform 0.5s ease-in-out;
+        transform-style: preserve-3d;
+
+        >img {
+            width: $item-size; // Ajustez la taille selon vos besoins
+            height: $item-size; // Ajustez la taille selon vos besoins
+            margin: 0;
+        }
+    }
+
+    &__description {
+        position: absolute;
+        top: 100px;
+        width: 200px;
+        font-size: 10px;
+        color: #999;
+        text-align: center;
+
+        &--display {
+            animation: fadeIn 1s linear;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        z-index: 10;
+        top: 125px;
+        cursor: pointer;
+
+        &-left {
+            left: 150px;
+            transform: rotate(180deg);
+        }
+
+        &-right {
+            right: 150px;
+        }
+    }
+}

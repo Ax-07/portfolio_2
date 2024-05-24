@@ -1,0 +1,23 @@
+.projets {
+    &__list {
+        @include flex(column, center, flex-start);
+        position: relative;
+        gap: 20px;
+        width: 100%;
+        padding: 40px 140px;
+
+        @media screen and (max-width: 768px) {
+            padding: 40px 20px;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 20px 0px;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        position: sticky;
+        top: 5rem;
+    }
+}

@@ -1,0 +1,51 @@
+.separateLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+    width: 100%;
+
+
+    &__line {
+        height: 1px;
+        max-width: 30%;
+        border:1px solid #fff;
+        animation: width-grow 1s linear 2.5s forwards, highlight 3s linear forwards;
+
+
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #333;
+        background-color: #fff;
+        transform: rotate(45deg);
+        animation: highlight 3s linear forwards;
+    }
+}
+
+@keyframes width-grow {
+    0% {
+        width: 0;
+        top: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes highlight {
+    0% {
+        box-shadow: 0 0 0px 0px $primary-color;
+        filter: blur(40px);
+    }
+    75% {
+        box-shadow: 0 0 50px 0 $secondary-color;
+        filter: blur(20px);
+    }
+    100% {
+        box-shadow: 0 0 0px 0 $primary-color;
+        filter: blur(0px);
+    }
+}

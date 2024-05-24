@@ -1,0 +1,40 @@
+@import './scss/utils/mixin.scss';
+@import './scss/global/mixin-fonts.scss';
+@import './scss/global/variables.scss';
+@import './scss/global/fonts.scss';
+@import './scss/global/reset.scss';
+
+@import './scss/utils/buttons.scss';
+@import './scss/utils/animation.scss';
+@import './utils/icons/icons.scss';
+
+@import './components/navSection/navSection.scss';
+@import './components/separateLines/separateLine.scss';
+@import './components/TextAnimation/textAnimation.scss';
+@import './components/Section/section.scss';
+@import './components/socialsLinks/socialsLinks.scss';
+@import './components/contactForm/contactForm.scss';
+@import './components/contactInfo/contactInfo.scss';
+@import './components/projet/projetCard.scss';
+@import './components/mocks/mock.scss';
+@import './components/stacksList/stackList.scss';
+@import './components/skills/skills.scss';
+@import './components/timeLine/timeline.scss';
+
+@import './layout/header/header.scss';
+@import './layout/footer/footer.scss';
+@import './layout/hero/hero.scss';
+@import './layout/services/services.scss';
+@import './layout/contact/contact.scss';
+@import './layout/projets/projets.scss';
+@import './layout/about/about.scss';
+
+@import './pages/home/home.scss';
+@import './pages/projet/projet.scss';
+@import './pages/contact/contactPage.scss';
+
+
+
+
+
+

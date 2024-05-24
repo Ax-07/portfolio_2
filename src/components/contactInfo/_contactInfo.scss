@@ -1,0 +1,14 @@
+.contact-info {
+    width: 100%;
+
+    &__wrapper {
+        @include flex(row, flex-start, flex-end);
+        gap: 16px;
+        width: 100%;
+        padding: 24px;
+
+        & > p {
+            margin-bottom: 5px;
+        }
+    }
+}

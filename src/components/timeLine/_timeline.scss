@@ -1,0 +1,57 @@
+// src/components/Timeline.scss
+.timeline {
+  @include flex(column, center, center);
+  gap: 20px;
+    text-align: left;
+    margin: 100px 200px 0;
+    width: 100%;
+
+    &__title {
+      @include font-section-sub-title;
+    }
+
+    &__container {
+      @include flex(row, center, flex-start);
+      width: 100%;
+      padding: 0 200px;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 0 50px;
+      }
+    }
+
+    &__left, &__right {
+      flex: 1;
+      padding: 50px 0;
+    }
+
+    &__item {
+      @include flex(row, flex-start, flex-start);
+      @include font-description;
+      height: 100px;
+      &-puce {
+        position: relative;
+        @include flex(column, flex-start, center);
+        height: 100%;
+        padding: 0 50px;
+        
+      }
+      &-point {
+        position: relative;
+        z-index: 2;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #999;
+        border-radius: 50%;
+        background: #999;
+      }
+      &-line {
+        position: absolute;
+        z-index: 1;
+        width: 5px;
+        height: 100%;
+        background: #999;
+      }
+    }
+  }

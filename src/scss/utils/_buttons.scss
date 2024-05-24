@@ -1,0 +1,38 @@
+button,
+.button,
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  min-width: 100px;
+  padding: 7px 26px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  // transition: all 0.3s ease-in-out;
+  @include gradient-border($primary-color, $primary-color-ligth, $bg-linear-gradient, 1px, solid, 25px);
+  
+
+  &:hover {
+    @include gradient-border($primary-color, $primary-color-ligth, $background-radial, 1px, solid, 25px);
+    // background: $background-radial;
+    box-shadow: 0 0px 10px 0px $primary-color;
+  }
+}
+
+.button-dark {
+  background-color: darken($accent-color, 10%);
+}
+
+.btn-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}

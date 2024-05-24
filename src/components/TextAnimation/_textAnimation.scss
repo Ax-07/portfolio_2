@@ -1,0 +1,59 @@
+.textAnimation {
+    width: 100%;
+    margin-top: 50px;
+}
+
+// @keyframes moveIn {
+//     0% {
+//         position: absolute;
+//         transform: translate(-1000%, -500%);
+//         opacity: 0;
+//     }
+//     100% {
+//         position: relative;
+//         transform: translate(0,0);
+//         opacity: 1;
+//     }
+// }
+
+.textanim {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // overflow: hidden;
+    // width: 365px;
+}
+.letter {
+    opacity: 0;
+    min-width: 12px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+@for $i from 0 through 14 {
+    @keyframes moveIn#{$i} {
+        0% {
+          transform: translate(-50%,0%);
+          opacity: 0;
+          filter: blur(0px);
+          background: rgba($color: #fff, $alpha: 0);
+
+        }
+        75% {
+            filter: blur(20px);
+            background: rgba($color: #fff, $alpha: 1.0);
+
+        }
+        100% {
+          position: relative;
+          transform: translate(0, 0);
+          opacity: 1;
+          filter: blur(0px);
+          background: rgba($color: #fff, $alpha: 0);
+
+        }
+    }
+    .letter-#{$i} {
+        animation: moveIn#{$i} 0.15s ease-in #{($i / 7) + 0.25}s forwards;
+    }
+}

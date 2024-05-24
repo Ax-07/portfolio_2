@@ -1,0 +1,13 @@
+.contact__page {
+    width: 100%;
+    flex: 1;
+
+    & > section {
+        margin-top: 0;
+        padding: 45px 140px;
+
+        & > picture {
+            top: 0;
+        }
+    }
+}

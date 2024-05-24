@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "title": "Kasa",
+    "subTitle": "Application web de location immobilière",
+    "description": "Projet d’initiation à “React” de la formation Openclassrooms.",
+    "categories": ["Location", "Front-end"],
+    "stacks": ["viteJs", "React", "scss"],
+    "links": {
+      "github": "https://github.com/Ax-07/P8-openClassRooms",
+      "website": "https://ax-07.github.io/P8-openClassRooms/"
+    },
+    "objectif": [
+      "Création d'une application “React”",
+      "Gestion de la navigation avec “React Router”",
+      "Gestion du Css avec Sass"
+    ],
+    "articles": [
+      { "title": "Vite JS",
+        "image": "/src/assets/icons/stacks/viteJS.png",
+        "content": [
+          "ViteJS est un outil moderne de build rapide pour les applications web basées sur JavaScript.",
+          "En l'intégrant dans mon projet, j'ai pu bénéficier d'une configuration simplifiée et d'une expérience de développement plus fluide."
+        ]
+      },
+      { "title": "React Router",
+        "image": "/src/assets/icons/stacks/ReactRouter.png",
+        "content": [
+          "React Router est une bibliothèque de routage pour React.",
+          "Il permet de gérer la navigation dans une application web.",
+          "J'ai utilisé cette bibliothèque pour gérer la navigation entre les différentes pages de mon application."
+        ]
+      },
+      { "title": "Sass",
+        "image": "/src/assets/icons/stacks/Sass.png",
+        "content": [
+          "Sass est un préprocesseur CSS qui permet d'écrire du CSS de manière plus structurée et plus maintenable.",
+          "J'ai utilisé Sass pour gérer le style de mon application et pour rendre mon code CSS plus lisible et plus facile à maintenir."
+        ]
+      }
+    ],
+    "conclusion": [
+      "Ce projet m'a permis de découvrir la bibliothèque React et de mettre en pratique mes compétences en JavaScript.",
+      "J'ai appris à créer une application web avec React, à gérer la navigation avec React Router et à gérer le style avec Sass.",
+      "J'ai également découvert ViteJS, un outil de build rapide pour les applications web basées sur JavaScript."
+    ],
+    "pictures": {
+      "img1": {
+        "desktop": "/src/assets/images/p8_openclassroom/home/desktop-P8-openClassRooms_home(desktop).webp",
+        "mobile": "/src/assets/images/p8_openclassroom/home/mobile-P8-openClassRooms_home(desktop).webp",
+        "tablet": "/src/assets/images/p8_openclassroom/home/tablet-P8-openClassRooms_home(desktop).webp"
+      },
+      "img2": {
+        "desktop": "/src/assets/images/p8_openclassroom/hebergement/desktop-P8-openClassRooms_hebergement(mobile).webp",
+        "mobile": "/src/assets/images/p8_openclassroom/hebergement/mobile-P8-openClassRooms_hebergement(mobile).webp",
+        "tablet": "/src/assets/images/p8_openclassroom/hebergement/tablet-P8-openClassRooms_hebergement(mobile).webp"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Sophie Bluel",
+    "subTitle": "Portfolio designer d'espace",
+    "description": "Projet Javascript de la formation Openclassrooms.",
+    "categories": ["Portfolio", "Front-end"],
+    "stacks": ["html", "css", "javascript"],
+    "links": {
+      "github": "https://github.com/Ax-07/P6-openClassRooms",
+      "website": "https://ax-07.github.io/P6-openClassRooms/FrontEnd/"
+    },
+    "objectif": [
+      "Création d'une page web dynamique avec JavaScript",
+      "Communication avec une API",
+      "Mettre en place un système de gestion de contenu (CMS)",
+      "Développer un site web avec une architecture MVC (optionnel)",
+      "Mettre en place un bus d'événements (optionnel)"
+    ],
+    "articles": [
+      {
+        "title": "API",
+        "image": "",
+        "content": [
+          "Une API (Application Programming Interface) est un ensemble de règles et de protocoles qui permettent à des logiciels de communiquer entre eux.",
+          "J'ai utilisé une API pour récupérer les données de mon site web et les afficher dynamiquement."
+        ]
+      },
+      {
+        "title": "CMS",
+        "image": "",
+        "content": [
+          "Un CMS (Content Management System) est un système de gestion de contenu qui permet de créer, modifier et publier du contenu sur un site web.",
+          "J'ai mis en place un CMS pour permettre à l'utilisateur de modifier le contenu de mon site web facilement."
+        ]
+      },
+      {
+        "title": "Architecture MVC",
+        "image": "",
+        "content": [
+          "L'architecture MVC (Modèle-Vue-Contrôleur) est un modèle de conception qui permet de séparer les données, la logique métier et l'interface utilisateur d'une application.",
+          "J'ai développé mon site web en suivant une architecture MVC pour rendre mon code plus modulaire et plus facile à maintenir."
+        ]
+      },
+      {
+        "title": "Bus d'événements",
+        "image": "",
+        "content": [
+          "Un bus d'événements est un modèle de conception qui facilite la communication entre les composants d'une application sans nécessiter que ces composants soient conscients les uns des autres.",
+          "Il fonctionne en émettant des événements depuis une partie de l'application, qui sont ensuite écoutés et traités par d'autres parties de l'application.",
+          "Dans ce projet, j'ai utilisé un bus d'événements pour gérer la communication entre les composants indépendants. Cela a permis de garder les composants découplés et de faciliter la maintenance et l'évolutivité de l'application."
+        ]
+      }
+    ],
+    "conclusion": [
+      "Ce projet m'a permis de mettre en pratique mes compétences en JavaScript en créant une page web dynamique. J'ai appris à manipuler le DOM et à gérer les événements de l'utilisateur.",
+      "J'ai également appris à communiquer avec une API pour récupérer les données de mon site web et les afficher dynamiquement. Cela m'a permis de comprendre comment les applications web modernes gèrent les données.",
+      "La mise en place d'un système de gestion de contenu (CMS) m'a permis de comprendre comment les sites web permettent aux utilisateurs de modifier le contenu facilement.",
+      "En option, j'ai développé mon site web en suivant une architecture MVC. Cela a rendu mon code plus modulaire et plus facile à maintenir, et m'a permis de comprendre comment les responsabilités peuvent être séparées dans une application web.",
+      "Enfin, l'utilisation d'un bus d'événements a amélioré la communication entre les composants indépendants de l'application, ce qui a rendu le code plus modulaire et plus facile à maintenir."
+    ],
+    "pictures": {
+      "img1": {
+        "desktop": "/src/assets/images/p6_openclassroom/home/desktop-P6-openClassRooms_home(desktop).webp",
+        "mobile": "/src/assets/images/p6_openclassroom/home/mobile-P6-openClassRooms_home(desktop).webp",
+        "tablet": "/src/assets/images/p6_openclassroom/home/tablet-P6-openClassRooms_home(desktop).webp"
+      },
+      "img2": {
+        "desktop": "/src/assets/images/p6_openclassroom/home_connected/desktop-P6-OC_home-connected(mobile).webp",
+        "mobile": "/src/assets/images/p6_openclassroom/home_connected/mobile-P6-OC_home-connected(mobile).webp",
+        "tablet": "/src/assets/images/p6_openclassroom/home_connected/tablet-P6-OC_home-connected(mobile).webp"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Projet 3",
+    "subTitle": "Application web de location immobilière",
+    "description": "",
+    "categories": ["cat2", "cat3"],
+    "stacks": ["mongoDb", "express", "react", "nodeJs"],
+    "pictures": {
+      "img1": {
+        "desktop": "img1_desktop.jpg",
+        "mobile": "img1_mobile.jpg",
+        "tablet": "img1_tablet.jpg"
+      },
+      "img2": {
+        "desktop": "img2_desktop.jpg",
+        "mobile": "img2_mobile.jpg",
+        "tablet": "img2_tablet.jpg"
+      }
+    }
+  }
+]
