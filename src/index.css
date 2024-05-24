@@ -198,6 +198,7 @@ main {
   top: 0px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex: 1;
   width: 100%;
@@ -2100,7 +2101,6 @@ button:hover::before,
 
 .contact__page {
   width: 100%;
-  flex: 1;
 }
 .contact__page > section {
   margin-top: 0;
