@@ -182,6 +182,7 @@ body.dark-mode {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: 100vh;
   height: -moz-fit-content;
   height: fit-content;
   margin: 0 auto;
