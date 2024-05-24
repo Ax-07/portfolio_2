@@ -54,6 +54,6 @@
         }
     }
     .letter-#{$i} {
-        animation: moveIn#{$i} 0.15s ease-in #{($i / 7) + 0.25}s forwards;
+        animation: moveIn#{$i} 0.15s ease-in #{calc($i / 7) + 0.25}s forwards;
     }
 }

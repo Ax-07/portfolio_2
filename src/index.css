@@ -1,11 +1,3 @@
-:root {
-  --textcolor: #222;
-}
-
-:root body.dark-mode {
-  --textcolor: #fff;
-}
-
 /* global */
 * {
   font-family: "roboto", sans-serif;
