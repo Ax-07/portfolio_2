@@ -2,7 +2,6 @@ import { Header } from "./layout/header/Header";
 import { Footer } from "./layout/footer/Footer";
 import { NavProvider } from "./context/navbarContext";
 import { Routes, Route } from "react-router-dom";
-import { DarkModeProvider } from "./components/darkModeBtn/DarkModeBtn";
 import bgImage from "./assets/unsplash_9V1cYW4JIfQ.png";
 import { Home } from "./pages/home/Home";
 import { useScrollToHashElement } from "./utils/hooks/useScrollToHashElement";
@@ -12,7 +11,6 @@ import { ContactPage } from "./pages/contact/ContactPage";
 function App() {
   useScrollToHashElement();
   return (
-    <DarkModeProvider>
       <NavProvider>
         <div className="app">
           <img
@@ -38,7 +36,6 @@ function App() {
         <Footer />
         </div>
       </NavProvider>
-    </DarkModeProvider>
   );
 }
 
