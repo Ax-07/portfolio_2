@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const projetApiJson = createApi({
     reducerPath: "projetApiJson",
-    baseQuery: fetchBaseQuery({ baseUrl: "./src/assets/json" }),
+    baseQuery: fetchBaseQuery({ baseUrl: "/" }),
     endpoints: (builder) => ({
         getProjetJson: builder.query({
             query: () => "/projets.json",
