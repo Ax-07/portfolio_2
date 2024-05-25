@@ -10,15 +10,7 @@ body {
   position: relative;
   background-position: center;
   background-size: cover;
-  color: #fff;
-  font-size: $base-font-size;
   max-width: 100vw;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .app {
@@ -33,7 +25,6 @@ body {
   @media screen and (max-width: 768px) {
     padding: 0;
   }
-  // overflow: hidden;
 }
 
 main {
@@ -58,17 +49,6 @@ ul {
   list-style: none;
 }
 
-
-.tag {
-  @include flex(row, center, center);
-  padding: 5px 20px;
-  background-color: #111111;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  color: aqua;
-  width: fit-content;
-}
-
 .notification {
   position: fixed;
   top: 20px;
@@ -83,28 +63,6 @@ ul {
 
   &.hide {
     animation: slideOut 0.5s ease-in-out;
-  }
-
-
-
-  @keyframes slideIn {
-    0% {
-      transform: translateY(-100%);
-    }
-
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slideOut {
-    0% {
-      transform: translateY(0);
-    }
-
-    100% {
-      transform: translateY(-100%);
-    }
   }
 }
 
