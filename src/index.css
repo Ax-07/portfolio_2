@@ -1382,7 +1382,7 @@ button:hover::before,
 @media screen and (max-width: 768px) {
   .timeline__container {
     flex-direction: column;
-    padding: 0 50px;
+    padding: 0;
   }
 }
 .timeline__left, .timeline__right {
@@ -1715,11 +1715,12 @@ button:hover::before,
   -webkit-backdrop-filter: blur(14px);
           backdrop-filter: blur(14px);
   box-shadow: 0 0 10px rgba(217, 217, 217, 0.5);
-  cursor: pointer;
   transition: box-shadow 0.2s ease-in-out;
 }
 @media screen and (max-width: 1024px) {
   .services__item {
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     max-width: 450px;
     padding: 20px;
@@ -1744,8 +1745,7 @@ button:hover::before,
 }
 @media screen and (max-width: 1024px) {
   .services__item-wrapper {
-    flex-direction: row;
-    align-items: center;
+    gap: 8px;
   }
 }
 .services__item:hover {
@@ -1753,41 +1753,41 @@ button:hover::before,
 }
 .services__item-circle {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 106px;
+  height: 106px;
   border-radius: 50%;
   background: rgba(217, 217, 217, 0.1);
 }
 @media screen and (max-width: 768px) {
   .services__item-circle {
-    width: 66.6666666667px;
-    height: 66.6666666667px;
+    width: 70.6666666667px;
+    height: 70.6666666667px;
   }
 }
 @media screen and (max-width: 480px) {
   .services__item-circle {
-    width: 50px;
-    height: 50px;
+    width: 53px;
+    height: 53px;
   }
 }
 .services__item-icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50px;
-  height: 50px;
+  width: 53px;
+  height: 53px;
   transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 768px) {
   .services__item-icon {
-    width: 33.3333333333px;
-    height: 33.3333333333px;
+    width: 35.3333333333px;
+    height: 35.3333333333px;
   }
 }
 @media screen and (max-width: 480px) {
   .services__item-icon {
-    width: 25px;
-    height: 25px;
+    width: 26.5px;
+    height: 26.5px;
   }
 }
 .services__item-icon--blur {
