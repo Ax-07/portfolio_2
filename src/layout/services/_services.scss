@@ -9,7 +9,6 @@ $service-icon-size: calc($service-icon-circle-size / 2);
     margin: 100px 0 0;
 
     &__title {
-        @include font-section-sub-title;
         width: fit-content;
     }
 

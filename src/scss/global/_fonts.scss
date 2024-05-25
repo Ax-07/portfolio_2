@@ -156,3 +156,11 @@ h1,h2,h3,h4,h5,h6,p,label,a {
         opacity: 0.6;
     }
 }
+
+.services__title, .skills__title {
+    @include font-section-sub-title;
+
+    @media screen and (max-width: 768px) {
+        font-size: 38px;
+    }
+}

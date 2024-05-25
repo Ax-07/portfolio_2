@@ -13,7 +13,8 @@ $item-size: calc($circle-radius / 7); // Taille des éléments
     overflow: hidden;
 
     &__title {
-        @include font-section-sub-title;
+
+
     }
 
     &__container {

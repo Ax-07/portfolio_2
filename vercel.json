@@ -4,5 +4,10 @@
             "source": "/(.*)",
             "destination": "/"
         }
+    ],
+    "builds": [
+        {
+            "src": "json/*.json", "use": "@vercel/static"
+        }
     ]
 }

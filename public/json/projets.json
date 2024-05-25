@@ -1,6 +1,5 @@
 [
-  {
-    "id": 1,
+  {    "id": 1,
     "title": "Kasa",
     "subTitle": "Application web de location immobilière",
     "description": "Projet d’initiation à “React” de la formation Openclassrooms.",
@@ -17,14 +16,14 @@
     ],
     "articles": [
       { "title": "Vite JS",
-        "image": "/src/assets/icons/stacks/viteJS.png",
+        "image": "/icons/stacks/viteJS.png",
         "content": [
           "ViteJS est un outil moderne de build rapide pour les applications web basées sur JavaScript.",
           "En l'intégrant dans mon projet, j'ai pu bénéficier d'une configuration simplifiée et d'une expérience de développement plus fluide."
         ]
       },
       { "title": "React Router",
-        "image": "/src/assets/icons/stacks/ReactRouter.png",
+        "image": "/icons/stacks/ReactRouter.png",
         "content": [
           "React Router est une bibliothèque de routage pour React.",
           "Il permet de gérer la navigation dans une application web.",
@@ -32,7 +31,7 @@
         ]
       },
       { "title": "Sass",
-        "image": "/src/assets/icons/stacks/Sass.png",
+        "image": "/icons/stacks/Sass.png",
         "content": [
           "Sass est un préprocesseur CSS qui permet d'écrire du CSS de manière plus structurée et plus maintenable.",
           "J'ai utilisé Sass pour gérer le style de mon application et pour rendre mon code CSS plus lisible et plus facile à maintenir."
@@ -46,19 +45,18 @@
     ],
     "pictures": {
       "img1": {
-        "desktop": "/src/assets/images/p8_openclassroom/home/desktop-P8-openClassRooms_home(desktop).webp",
-        "mobile": "/src/assets/images/p8_openclassroom/home/mobile-P8-openClassRooms_home(desktop).webp",
-        "tablet": "/src/assets/images/p8_openclassroom/home/tablet-P8-openClassRooms_home(desktop).webp"
+        "desktop": "/images/p8_openclassroom/home/desktop-P8-openClassRooms_home(desktop).webp",
+        "mobile": "/images/p8_openclassroom/home/mobile-P8-openClassRooms_home(desktop).webp",
+        "tablet": "/images/p8_openclassroom/home/tablet-P8-openClassRooms_home(desktop).webp"
       },
       "img2": {
-        "desktop": "/src/assets/images/p8_openclassroom/hebergement/desktop-P8-openClassRooms_hebergement(mobile).webp",
-        "mobile": "/src/assets/images/p8_openclassroom/hebergement/mobile-P8-openClassRooms_hebergement(mobile).webp",
-        "tablet": "/src/assets/images/p8_openclassroom/hebergement/tablet-P8-openClassRooms_hebergement(mobile).webp"
+        "desktop": "/images/p8_openclassroom/hebergement/desktop-P8-openClassRooms_hebergement(mobile).webp",
+        "mobile": "/images/p8_openclassroom/hebergement/mobile-P8-openClassRooms_hebergement(mobile).webp",
+        "tablet": "/images/p8_openclassroom/hebergement/tablet-P8-openClassRooms_hebergement(mobile).webp"
       }
     }
   },
-  {
-    "id": 2,
+  {    "id": 2,
     "title": "Sophie Bluel",
     "subTitle": "Portfolio designer d'espace",
     "description": "Projet Javascript de la formation Openclassrooms.",
@@ -119,14 +117,14 @@
     ],
     "pictures": {
       "img1": {
-        "desktop": "/src/assets/images/p6_openclassroom/home/desktop-P6-openClassRooms_home(desktop).webp",
-        "mobile": "/src/assets/images/p6_openclassroom/home/mobile-P6-openClassRooms_home(desktop).webp",
-        "tablet": "/src/assets/images/p6_openclassroom/home/tablet-P6-openClassRooms_home(desktop).webp"
+        "desktop": "/images/p6_openclassroom/home/desktop-P6-openClassRooms_home(desktop).webp",
+        "mobile": "/images/p6_openclassroom/home/mobile-P6-openClassRooms_home(desktop).webp",
+        "tablet": "/images/p6_openclassroom/home/tablet-P6-openClassRooms_home(desktop).webp"
       },
       "img2": {
-        "desktop": "/src/assets/images/p6_openclassroom/home_connected/desktop-P6-OC_home-connected(mobile).webp",
-        "mobile": "/src/assets/images/p6_openclassroom/home_connected/mobile-P6-OC_home-connected(mobile).webp",
-        "tablet": "/src/assets/images/p6_openclassroom/home_connected/tablet-P6-OC_home-connected(mobile).webp"
+        "desktop": "/images/p6_openclassroom/home_connected/desktop-P6-OC_home-connected(mobile).webp",
+        "mobile": "/images/p6_openclassroom/home_connected/mobile-P6-OC_home-connected(mobile).webp",
+        "tablet": "/images/p6_openclassroom/home_connected/tablet-P6-OC_home-connected(mobile).webp"
       }
     }
   }

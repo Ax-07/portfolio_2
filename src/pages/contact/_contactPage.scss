@@ -5,6 +5,14 @@
         margin-top: 0;
         padding: 45px 140px;
 
+        @media screen and (max-width: 768px) {
+            padding: 45px 60px;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 45px 20px;
+        }
+
         & > picture {
             top: 0;
         }
