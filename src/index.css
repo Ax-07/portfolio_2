@@ -424,7 +424,7 @@ button:hover::before,
 }
 @media screen and (max-width: 425px) {
   .nav-section__item {
-    width: 200px;
+    width: 150px;
   }
 }
 .nav-section__link {
