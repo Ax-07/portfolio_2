@@ -6,46 +6,46 @@
     letter-spacing: 1px;
 }
 
-h1,h2,h3,h4,h5,h6,p,label,a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+a {
     font-weight: 500;
 }
 
 .section-title {
-    font-size: 64px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 1px;
-}
-
-@mixin section-title {
-    font-size: 64px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 1px;
+    @include font-section-title;
 }
 
 .header {
     &__logo {
-        text-decoration: none !important;
         font-family: "Alex Brush", cursive;
         font-size: 64px;
         font-weight: 700;
-        line-height: 80px;
-        vertical-align: baseline;
 
         @media screen and (max-width: 768px) {
-            font-size: 40px;
+            font-size: 48px;
         }
     }
 }
+
 .nav-section {
     &__link {
         font-size: 20px;
-        // font-weight: 600;
         color: #fff;
         text-decoration: none;
+
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+        }
     }
 }
+
 .hero {
     &__title {
         font-size: 64px;
@@ -81,39 +81,31 @@ h1,h2,h3,h4,h5,h6,p,label,a {
         }
     }
 }
+
 .section {
     &__title {
-        font-size: 48px;
-        font-weight: 700;
-        color: #fff;
-
-        @media screen and (max-width: 768px) {
-            font-size: 42px;
-        }
-
-        @media screen and (max-width: 480px) {
-            font-size: 30px;
-        }
+        @include font-section-title;
     }
 
     &__sub-title {
-        font-size: 36px;
-        font-weight: 600;
-        color: #999;
+        @include font-section-sub-title-darken;
     }
 }
+
 .projet-card {
     &__title {
         font-size: 32px;
         font-weight: 700;
         color: #fff;
     }
+
     &__description {
         font-size: 16px;
         font-weight: 500;
         color: #fff;
         opacity: 0.4;
     }
+
     &__category {
         font-size: 16px;
         font-weight: 500;
@@ -121,34 +113,16 @@ h1,h2,h3,h4,h5,h6,p,label,a {
         text-align: center;
     }
 }
+
 .projet-page {
     &__title {
-        font-size: 64px;
-        font-weight: 600;
-        color: #fff;
-
-        @media screen and (max-width: 768px) {
-            font-size: 42px;
-        }
-
-        @media screen and (max-width: 480px) {
-            font-size: 30px;
-        }
+        @include font-section-title;
     }
+
     &__subTitle {
-        font-size: 48px;
-        font-weight: 600;
-        color: #d9d9d9;
-        opacity: 0.8;
-
-        @media screen and (max-width: 768px) {
-            font-size: 32px;
-        }
-
-        @media screen and (max-width: 480px) {
-            font-size: 24px;
-        }
+        @include font-section-sub-title;
     }
+
     &__description {
         font-size: 24px;
         font-weight: 500;
@@ -157,10 +131,8 @@ h1,h2,h3,h4,h5,h6,p,label,a {
     }
 }
 
-.services__title, .skills__title {
+.services__title,
+.skills__title,
+.timeline__title {
     @include font-section-sub-title;
-
-    @media screen and (max-width: 768px) {
-        font-size: 38px;
-    }
 }

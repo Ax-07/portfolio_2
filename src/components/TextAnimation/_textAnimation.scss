@@ -1,20 +1,8 @@
 .textAnimation {
     width: 100%;
+    height: fit-content;
     margin-top: 50px;
 }
-
-// @keyframes moveIn {
-//     0% {
-//         position: absolute;
-//         transform: translate(-1000%, -500%);
-//         opacity: 0;
-//     }
-//     100% {
-//         position: relative;
-//         transform: translate(0,0);
-//         opacity: 1;
-//     }
-// }
 
 .textanim {
     display: flex;
@@ -28,6 +16,14 @@
     min-width: 12px;
     margin-bottom: 10px;
     border-radius: 50%;
+
+    @media screen and (max-width: $media-query-small) {
+        min-width: 8px;
+    }
+
+    @media screen and (max-width: $media-query-medium) {
+        min-width: 10px;
+    }
 }
 
 @for $i from 0 through 14 {

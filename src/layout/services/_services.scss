@@ -4,9 +4,9 @@ $service-icon-size: calc($service-icon-circle-size / 2);
 .services {
     position: relative;
     @include flex(column, center, center);
-    gap: 8px;
+    gap: 30px;
     width: 100%;
-    margin: 100px 0 0;
+    margin: 80px 0 0;
 
     &__title {
         width: fit-content;
@@ -53,11 +53,12 @@ $service-icon-size: calc($service-icon-circle-size / 2);
         }
         
         &-wrapper {
-            @include flex(column, flex-start, center);
+            @include flex(column, flex-start, flex-start);
             gap: 16px;
         
             @media screen and (max-width: 1024px) {
                 flex-direction: row;
+                align-items: center;
             }
         }
 

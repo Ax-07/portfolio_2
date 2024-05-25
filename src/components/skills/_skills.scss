@@ -8,14 +8,8 @@ $item-size: calc($circle-radius / 7); // Taille des éléments
     width: 100%;
     max-width: 900px;
     height: 580px;
-    margin: 20px 0 0;
-    padding: 80px;
+    padding: 80px 0;
     overflow: hidden;
-
-    &__title {
-
-
-    }
 
     &__container {
         position: absolute;

@@ -5,15 +5,15 @@
     width: 100%;
     min-height: 650px;
     margin: 100px 0;
-    padding: 100px 140px;
+    padding: 230px 140px;
     opacity: 0;
 
     @media screen and (max-width: 768px) {
-        padding: 60px 60px;
+        padding: 180px 60px;
     }
 
     @media screen and (max-width: 480px) {
-        padding: 30px 20px;
+        padding: 120px 20px;
     }
 
     &--display {
@@ -36,14 +36,15 @@
 }
 .section-title__overlay {
     position: absolute;
-    top: 0px;
+    top: 130px;
     z-index: -1;
     width: 90%;
     height: 100%;
     overflow: hidden;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: $media-query-medium) {
         width: 100%;
+        top: 80px;
     }
 
     &-img {

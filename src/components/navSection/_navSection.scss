@@ -1,20 +1,22 @@
 .nav-section {
     position: relative;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: $media-query-small) {
         width: 100%;
+        background: rgba($color: $background, $alpha: 0.9) ;
+
     }
 
     &__list {
         @include flex(row, center, center);
+        flex-wrap: wrap;
         list-style: none;
         border-radius: 0 0 25px 25px;
         overflow: hidden;
         animation: openNav 0.3s linear forwards;
+        
 
-        @media screen and (min-width: 768px) {
-            gap: 1rem;
-            padding: 5px;
+        @media screen and (min-width: $media-query-medium) {
             box-shadow: none;
             border-radius: 0;
             animation: none;
@@ -22,7 +24,11 @@
     }
 
     &__item {
-        display: flex;
+        @include flex(row, center, center);
+
+        @media screen and (max-width: $media-query-small){
+            width: 50%;
+        }
     }
 
     &__link {
@@ -51,19 +57,17 @@
         width: 0;
         height: 0;
         padding: 0;
-        box-shadow: 0 0 0 0 $primary-color;
     }
 
     50% {
         width: 100%;
         height: 0;
         padding: 0;
-        box-shadow: 0 0 10px 2px $primary-color;
     }
 
     100% {
         width: 100%;
-        height: 40px;
+        height: 100px;
         padding: 5px;
         box-shadow: 0 3px 3px 0px $primary-color;
     }

@@ -3,6 +3,7 @@
     gap: 40px;
     width: 100%;
     animation: fadeIn 0.5s ease-in-out;
+
     &__header {
         position: relative;
         display: flex;
@@ -21,6 +22,14 @@
             width: 90%;
             height: 100%;
             opacity: 0.2;
+
+            @media screen and (max-width: $media-query-medium) {
+                width: 95%;
+            }
+
+            // @media screen and (max-width: $media-query-small) {
+            //     width: 100%;
+            // }
         }
     }
 
@@ -35,6 +44,7 @@
     &__content {
         @include flex(column, center, center);
         gap: 20px;
+        width: 100%;
     }
 
     &__links {
@@ -57,6 +67,7 @@
 
     &__skill-target {
         @include flex(column, flex-start, flex-start);
+        max-width: 400px;
         margin-bottom: 100px;
 
         &__title {
@@ -84,8 +95,15 @@
 
     &__article {
         @include flex(row, center, center);
+        gap: 20px;
         width: 100%;
         padding: 100px;
+
+        @media screen and (max-width: $media-query-medium) {
+            flex-direction: column;
+            padding: 40px;
+
+        }
 
         &__img {
             @include flex(column, center, center);
@@ -97,6 +115,12 @@
                 backdrop-filter: blur(15px);
                 background: rgba(255, 255, 255, 0.05);
                 border-radius: 40px;
+
+                @media screen and (max-width: $media-query-medium) {
+                    width: 75%;
+                    aspect-ratio: 1/1;
+                    padding: 40px;
+                }
             }
         }
 
@@ -107,9 +131,7 @@
         }
 
         &__title {
-            font-size: 48px;
-            font-weight: 600;
-            color: #fff;
+            @include font-section-sub-title;
             margin-bottom: 20px;
         }
 
@@ -140,6 +162,10 @@
 
             & aside p {
                 text-align: right;
+
+                @media screen and (max-width: 768px) {
+                    text-align: left;
+                }
             }
         }
     }
@@ -147,15 +173,22 @@
     &__conclusion {
         @include flex(column, center, flex-start);
         gap: 20px;
-        padding: 200px 200px 300px;
+        padding: 200px;
         margin: 100px 0;
         background: rgba($color: #847603, $alpha: 0.2);
         clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
 
+
+        @media screen and (max-width: $media-query-medium) {
+            padding: 200px 40px;
+        }
+
+        @media screen and (max-width: $media-query-small) {
+            padding: 300px 40px;
+        }
+
         &__title {
-            font-size: 48px;
-            font-weight: 600;
-            color: #fff;
+            @include font-section-sub-title;
             margin-bottom: 20px;
         }
 
@@ -167,4 +200,5 @@
             text-align: left;
         }
     }
+
 }

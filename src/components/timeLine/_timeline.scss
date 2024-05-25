@@ -6,10 +6,6 @@
     margin: 100px 200px 0;
     width: 100%;
 
-    &__title {
-      @include font-section-sub-title;
-    }
-
     &__container {
       @include flex(row, center, flex-start);
       width: 100%;

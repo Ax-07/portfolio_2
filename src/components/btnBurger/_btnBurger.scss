@@ -24,7 +24,7 @@
         position: absolute;
         width: 75%;
 
-        border: 1px solid var(--textcolor);
+        border: 1px solid $primary-color;
 
         &:nth-child(1) {
             top: 25%;
