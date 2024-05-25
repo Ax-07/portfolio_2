@@ -9,6 +9,7 @@
 
     &__list {
         @include flex(row, center, center);
+        gap: 10px;
         flex-wrap: wrap;
         list-style: none;
         border-radius: 0 0 25px 25px;

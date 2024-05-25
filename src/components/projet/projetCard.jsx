@@ -28,7 +28,7 @@ export const ProjetCard = (projet) => {
           <img src={showMore} alt="show more btn" />
           </Link>
         </span>
-        <h4 className="projet-card__subTitle">{projet.subTitle}</h4>
+        <h4 className="projet-card__sub-title">{projet.subTitle}</h4>
       </div>
     </article>
   );

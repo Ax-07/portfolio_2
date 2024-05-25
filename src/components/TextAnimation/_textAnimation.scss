@@ -17,13 +17,13 @@
     margin-bottom: 10px;
     border-radius: 50%;
 
+    @media screen and (max-width: $media-query-medium) {
+        min-width: 10px;
+    }
     @media screen and (max-width: $media-query-small) {
         min-width: 8px;
     }
 
-    @media screen and (max-width: $media-query-medium) {
-        min-width: 10px;
-    }
 }
 
 @for $i from 0 through 14 {

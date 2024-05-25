@@ -123,7 +123,7 @@
   font-weight: 700;
   color: #fff;
 }
-.projet-card__description {
+.projet-card__sub-title {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
@@ -400,6 +400,7 @@ button:hover::before,
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   flex-wrap: wrap;
   list-style: none;
   border-radius: 0 0 25px 25px;
@@ -529,14 +530,14 @@ button:hover::before,
   margin-bottom: 10px;
   border-radius: 50%;
 }
-@media screen and (max-width: 425px) {
-  .letter {
-    min-width: 8px;
-  }
-}
 @media screen and (max-width: 768px) {
   .letter {
     min-width: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .letter {
+    min-width: 8px;
   }
 }
 
@@ -1026,6 +1027,7 @@ button:hover::before,
   padding: 24px;
 }
 .contact-info__wrapper > p {
+  color: #fff;
   margin-bottom: 5px;
 }
 
@@ -1045,12 +1047,12 @@ button:hover::before,
 }
 @media screen and (max-width: 768px) {
   .projet-card {
-    padding: 0 20px;
+    padding: 0 20px 20px;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 425px) {
   .projet-card {
-    padding: 0;
+    padding: 0 0 20px;
   }
 }
 .projet-card__background {
@@ -1109,7 +1111,7 @@ button:hover::before,
 .projet-card__title {
   width: 50%;
 }
-.projet-card__subTitle {
+.projet-card__sub-title {
   width: 100%;
   padding: 20px;
 }
