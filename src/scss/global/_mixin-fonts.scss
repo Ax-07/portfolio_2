@@ -1,5 +1,19 @@
 // _mixins.scss
 
+@mixin font-logo {
+    font-family: "Alex Brush", cursive;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+
+    @media screen and (max-width: $media-query-medium) {
+        font-size: 44px;
+    }
+    @media screen and (max-width: $media-query-small) {
+        font-size: 32px;
+    }
+}
+
 @mixin font-section-title {
     font-size: 64px;
     font-weight: 700;

@@ -48,7 +48,7 @@ export const TextAnimation = ({text}) => {
                 x="50%"
                 y="50%"
                 fill="url(#grad)"
-                fontSize="108px"
+                fontSize="128px"
                 fontStyle="italic"
                 fontFamily="Roboto"
                 fontWeight="bold"
@@ -59,7 +59,7 @@ export const TextAnimation = ({text}) => {
                 filter="url(#shadow)"
             >
                 {displayedText}
-                <animate attributeName="stroke-dashoffset" from="600" to="0" dur={duration} fill="freeze" />
+                <animate attributeName="stroke-dashoffset" from="700" to="0" dur={"3s"} fill="freeze" />
             </text>
         </svg>
     )
