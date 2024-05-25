@@ -16,7 +16,7 @@
     ],
     "articles": [
       { "title": "Vite JS",
-        "image": "/icons/stacks/viteJS.png",
+        "image": "/icons/stacks/ViteJS.png",
         "content": [
           "ViteJS est un outil moderne de build rapide pour les applications web basées sur JavaScript.",
           "En l'intégrant dans mon projet, j'ai pu bénéficier d'une configuration simplifiée et d'une expérience de développement plus fluide."
