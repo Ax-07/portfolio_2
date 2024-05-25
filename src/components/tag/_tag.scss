@@ -1,0 +1,9 @@
+.tag {
+    @include flex(row, center, center);
+    padding: 5px 20px;
+    background-color: #111111;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    color: aqua;
+    width: fit-content;
+  }
