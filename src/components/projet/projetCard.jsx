@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import showMore from "../../assets/icons/show-more__btn.png";
-import bgPicture from "../../assets/images/bgPicture1.png";
 import { Mock } from "../mocks/Mock";
 import { StackList } from "../stacksList/StackList";
 

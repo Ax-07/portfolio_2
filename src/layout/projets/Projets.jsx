@@ -1,10 +1,9 @@
 import { Section } from "../../components/Section/Section";
-import { useGetProjetJsonQuery, useGetProjetQuery } from "../../api/projetApi";
+import { useGetProjetQuery } from "../../api/projetApi";
 import { ProjetCard } from "../../components/projet/projetCard.jsx" 
 
 export const Projets = () => {
-    const { data: projets2 } = useGetProjetQuery(); console.log(projets2);
-    const { data: projets, error, isLoading } = useGetProjetJsonQuery();
+    const { data: projets, error, isLoading } = useGetProjetQuery();
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error</div>;
 
@@ -21,4 +20,3 @@ export const Projets = () => {
         </Section>
     );
 };
-

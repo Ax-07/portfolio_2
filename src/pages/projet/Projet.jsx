@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
-import { useGetProjetJsonQuery, useGetProjetQuery } from "../../api/projetApi";
+import { useGetProjetQuery } from "../../api/projetApi";
 import { useEffect } from "react";
 import { Mock } from "../../components/mocks/Mock";
 import bgRectangle from "../../assets/images/bgRectangle.png";
@@ -8,8 +8,7 @@ import { GithubIcon, GlobeIcon } from "../../utils/icons/iconsStack";
 
 export const Projet = () => {
   const { id } = useParams();
-  const { data: projets2 = []} = useGetProjetQuery(); console.log(projets2);
-  const { data: projets = [], error, isLoading} = useGetProjetJsonQuery();
+  const { data: projets = [], error, isLoading} = useGetProjetQuery();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
