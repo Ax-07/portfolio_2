@@ -1,15 +1,18 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-// export const projetApi = createApi({
-//     reducerPath: "projetApiJson",
-//     baseQuery: fetchBaseQuery({ baseUrl: "./src/assets/json" }),
-//     endpoints: (builder) => ({
-//         getProjetJson: builder.query({
-//             query: () => "/projets.json",
-//             providesTags: ["ProjetJson"],
-//         }),
-//     }),
-// });
+export const projetApiJson = createApi({
+    reducerPath: "projetApiJson",
+    baseQuery: fetchBaseQuery({ baseUrl: "./src/assets/json" }),
+    endpoints: (builder) => ({
+        getProjetJson: builder.query({
+            query: () => "/projets.json",
+            providesTags: ["ProjetJson"],
+        }),
+    }),
+});
+
+export const { useGetProjetJsonQuery } = projetApiJson;
+
 export const projetApi = createApi({
     reducerPath: 'projetApi',
     baseQuery: fetchBaseQuery({ baseUrl: `${import.meta.env.VITE_REACT_APP_API_URL}/api/projet`}),
@@ -22,4 +25,4 @@ export const projetApi = createApi({
     }),
 });
 
-export const { useGetProjetJsonQuery } = projetApi;
+export const { useGetProjetQuery } = projetApi;
