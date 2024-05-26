@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { sendContact } from "../../services/contact";
+import { sendContact } from "../../api/contactApi";
 import faEnvelope from "../../assets/icons/faEnvelope.svg";
 import faMessage from "../../assets/icons/faMessage.svg";
 import faUser from "../../assets/icons/faUser.svg";
