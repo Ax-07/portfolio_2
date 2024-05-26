@@ -1,14 +1,29 @@
+import { useState } from "react";
+import { sendContact } from "../../services/contact";
 import faEnvelope from "../../assets/icons/faEnvelope.svg";
 import faMessage from "../../assets/icons/faMessage.svg";
 import faUser from "../../assets/icons/faUser.svg";
 
 export const ContactForm = () => {
+  const [ name, setName ] = useState("");
+  const [ email, setEmail ] = useState("");
+  const [ message, setMessage ] = useState("");
+
     function autoResize(textarea) {
         textarea.style.height = 'auto';
         textarea.style.height = textarea.scrollHeight + 'px';
       }
+      const onSubmit = async (e) => {
+        e.preventDefault();
+        const formData = {
+            name,
+            email,
+            message,
+        };
+        sendContact(formData)
+    }
     return (
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={onSubmit}>
         <div className="contact-form__wrapper">
           <label htmlFor="name" className="contact-form__label">
             <img src={faUser} alt="" />
@@ -18,6 +33,7 @@ export const ContactForm = () => {
             id="name"
             placeholder="Nom*"
             className="contact-form__input"
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div className="contact-form__wrapper">
@@ -29,6 +45,7 @@ export const ContactForm = () => {
             id="email"
             placeholder="Email*"
             className="contact-form__input"
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="contact-form__wrapper">
@@ -43,6 +60,7 @@ export const ContactForm = () => {
             rows="1"
             placeholder="Message*"
             onInput={(e) => autoResize(e.target)}
+            onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
         <input
