@@ -6,7 +6,9 @@ export const sendContact = async (form_data) => {
         const response = await fetch(`${serverHost}/api/contact`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'access-control-allow-origin': '*',
+                'access-control-allow-credentials': 'true',
             },
             body: JSON.stringify(form_data),
         });
