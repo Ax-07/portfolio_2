@@ -38,7 +38,7 @@ export const ContactForm = () => {
           />
         </div>
         <div className="contact-form__wrapper">
-          <label htmlFor="email">
+          <label htmlFor="email" className="contact-form__label">
             <img src={faEnvelope} alt="" />
           </label>
           <input
@@ -51,7 +51,7 @@ export const ContactForm = () => {
           />
         </div>
         <div className="contact-form__wrapper">
-          <label htmlFor="message">
+          <label htmlFor="message" className="contact-form__label">
             <img src={faMessage} alt="" />
           </label>
           <textarea
@@ -66,11 +66,11 @@ export const ContactForm = () => {
             required
           ></textarea>
         </div>
-        <input
+        <button
           type="submit"
-          value="Envoyer"
           className="contact-form__btn btn"
-        />
+          role="button"
+        >Envoyer</button>
       </form>
     );
 };
