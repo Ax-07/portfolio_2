@@ -22,6 +22,8 @@
 }
 
 .header__logo {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   font-family: "Alex Brush", cursive;
   font-size: 64px;
   font-weight: 700;
@@ -40,10 +42,16 @@
 
 .nav-section__link {
   font-size: 20px;
+  font-weight: 500;
   color: #fff;
   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
+  .nav-section__link {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
   .nav-section__link {
     font-size: 16px;
   }
@@ -169,10 +177,20 @@
   }
 }
 .projet-page__description {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
-  color: #fff;
-  opacity: 0.6;
+  color: #999;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .projet-page__description {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .projet-page__description {
+    font-size: 20px;
+  }
 }
 
 .services__title,
@@ -290,6 +308,7 @@ button,
 .button,
 .btn {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -984,7 +1003,7 @@ button:hover::before,
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-end;
   width: 100%;
   padding: 24px 0;
   border-bottom: 1px solid #6FBBF4;
@@ -995,16 +1014,38 @@ button:hover::before,
 .contact-form__wrapper:focus-within > input::placeholder, .contact-form__wrapper:focus-within textarea::placeholder {
   color: #fff;
 }
+.contact-form__label {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .contact-form__input {
   color: #fff;
   width: 100%;
-  height: auto;
+  height: -moz-max-content;
+  height: max-content;
   margin-left: 16px;
   padding-left: 5px;
   background: none;
   border: none;
   line-height: 30px;
   resize: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #999;
+}
+@media screen and (max-width: 768px) {
+  .contact-form__input {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .contact-form__input {
+    font-size: 16px;
+  }
 }
 .contact-form__input:focus {
   outline: none;
@@ -1820,6 +1861,16 @@ button:hover::before,
 }
 @media screen and (max-width: 768px) {
   .services__item-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .services__item-title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services__item-title {
     font-size: 20px;
     font-weight: 700;
     color: #fff;
@@ -1909,7 +1960,17 @@ button:hover::before,
 .projets__item {
   width: 100%;
   position: sticky;
-  top: 5rem;
+  top: 9rem;
+}
+@media screen and (max-width: 768px) {
+  .projets__item {
+    top: 6rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .projets__item {
+    top: 5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1989,6 +2050,7 @@ button:hover::before,
   gap: 40px;
   width: 100%;
   animation: fadeIn 0.5s ease-in-out;
+  padding: 0 10px;
 }
 .projet-page__header {
   position: relative;
@@ -2060,13 +2122,23 @@ button:hover::before,
   align-items: flex-start;
   max-width: 400px;
   margin-bottom: 100px;
+  padding: 0 40px;
 }
 .projet-page__skill-target__title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
-  color: #fff;
-  opacity: 0.6;
+  color: #999;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .projet-page__skill-target__title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .projet-page__skill-target__title {
+    font-size: 16px;
+  }
 }
 .projet-page__skill-target__list {
   display: flex;
@@ -2078,10 +2150,19 @@ button:hover::before,
   list-style: disc;
 }
 .projet-page__skill-target__item {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
-  color: #fff;
-  opacity: 0.6;
+  color: #999;
+}
+@media screen and (max-width: 768px) {
+  .projet-page__skill-target__item {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .projet-page__skill-target__item {
+    font-size: 16px;
+  }
 }
 .projet-page__article {
   display: flex;

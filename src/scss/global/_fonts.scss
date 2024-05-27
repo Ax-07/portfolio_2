@@ -1,5 +1,3 @@
-// @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-
 * {
     font-family: "roboto", sans-serif;
     line-height: 125%;
@@ -12,22 +10,13 @@
 
 .header {
     &__logo {
-        
-@include font-logo;
-
-
+        @include font-logo;
     }
 }
 
 .nav-section {
     &__link {
-        font-size: 20px;
-        color: #fff;
-        text-decoration: none;
-
-        @media screen and (max-width: 768px) {
-            font-size: 16px;
-        }
+        @include font-nav-link;
     }
 }
 
@@ -109,10 +98,8 @@
     }
 
     &__description {
-        font-size: 24px;
-        font-weight: 500;
-        color: #fff;
-        opacity: 0.6;
+        @include font-section-description;
+        text-align: center;
     }
 }
 

@@ -1,9 +1,7 @@
 button,
 .button,
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center, center);
   color: #fff;
   min-width: 100px;
   padding: 7px 26px;
@@ -16,7 +14,7 @@ button,
   cursor: pointer;
   // transition: all 0.3s ease-in-out;
   @include gradient-border($primary-color, $primary-color-ligth, $bg-linear-gradient, 1px, solid, 25px);
-  
+
 
   &:hover {
     @include gradient-border($primary-color, $primary-color-ligth, $background-radial, 1px, solid, 25px);

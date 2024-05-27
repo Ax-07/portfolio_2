@@ -3,6 +3,7 @@
     gap: 40px;
     width: 100%;
     animation: fadeIn 0.5s ease-in-out;
+    padding: 0 10px;
 
     &__header {
         position: relative;
@@ -26,10 +27,6 @@
             @media screen and (max-width: $media-query-medium) {
                 width: 95%;
             }
-
-            // @media screen and (max-width: $media-query-small) {
-            //     width: 100%;
-            // }
         }
     }
 
@@ -69,12 +66,10 @@
         @include flex(column, flex-start, flex-start);
         max-width: 400px;
         margin-bottom: 100px;
+        padding: 0 40px;
 
         &__title {
-            font-size: 16px;
-            font-weight: 500;
-            color: #fff;
-            opacity: 0.6;
+            @include font-description;
             margin-bottom: 20px
         }
 
@@ -86,10 +81,7 @@
         }
 
         &__item {
-            font-size: 16px;
-            font-weight: 500;
-            color: #fff;
-            opacity: 0.6;
+            @include font-description;
         }
     }
 

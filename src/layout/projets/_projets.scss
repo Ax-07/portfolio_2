@@ -22,6 +22,14 @@
     &__item {
         width: 100%;
         position: sticky;
-        top: 5rem;
+        top: 9rem;
+
+        @media screen and (max-width: $media-query-medium) {
+            top: 6rem;
+        }
+
+        @media screen and (max-width: $media-query-small) {
+            top: 5rem;
+        }
     }
 }

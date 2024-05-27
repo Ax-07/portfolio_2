@@ -27,8 +27,6 @@ $color-bg-secondary: #252525;
 $color-bg-tertiary: #555561;
 $bg-linear-gradient: linear-gradient(90deg, $primary-color, #1D6FAB);
 $background-radial: radial-gradient( circle farthest-corner at 50% 50%,  rgba($primary-color,0.5) 10%, rgba(255,255,255,0.1) 100% );
-$background-radial-hover: radial-gradient( circle farthest-corner at 50% 50%,  rgba($primary-color,0.7) 8.3%, rgba(0,07,0,1) 100.4% );
-$background-radial-active: radial-gradient( circle farthest-corner at 50% 50%,  $primary-color 8.3%, rgba(0,07,0,1) 100.4% );
 
 
 $media-query-small: 425px;
