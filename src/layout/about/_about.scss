@@ -15,6 +15,7 @@
         color: #a9a9a9;
         margin: 40px 0 0;
         padding: 0 100px;
+        @include font-description;
 
         @media screen and (max-width: 768px) {
             margin: 20px 0 0;

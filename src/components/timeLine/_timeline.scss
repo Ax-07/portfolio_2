@@ -28,11 +28,19 @@
     @include font-description;
     height: 100px;
 
+    @media screen and (max-width: $media-query-medium) {
+      height: 80px;
+    }
+
     &-puce {
       position: relative;
       @include flex(column, flex-start, center);
       height: 100%;
       padding: 0 50px;
+
+      @media screen and (max-width: $media-query-medium) {
+        padding: 0 30px;
+      }
 
     }
 

@@ -1399,6 +1399,21 @@ button:hover::before,
   color: #999;
   height: 100px;
 }
+@media screen and (max-width: 768px) {
+  .timeline__item {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .timeline__item {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .timeline__item {
+    height: 80px;
+  }
+}
 .timeline__item-puce {
   position: relative;
   display: flex;
@@ -1407,6 +1422,11 @@ button:hover::before,
   align-items: center;
   height: 100%;
   padding: 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .timeline__item-puce {
+    padding: 0 30px;
+  }
 }
 .timeline__item-point {
   position: relative;
@@ -1909,6 +1929,19 @@ button:hover::before,
   color: #a9a9a9;
   margin: 40px 0 0;
   padding: 0 100px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #999;
+}
+@media screen and (max-width: 768px) {
+  .about__text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about__text {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 768px) {
   .about__text {
