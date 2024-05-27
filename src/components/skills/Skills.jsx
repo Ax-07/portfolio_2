@@ -1,6 +1,5 @@
 import { iconsStack } from "../../utils/icons/iconsStack";
 import { useState } from "react";
-import { Section } from "../Section/Section";
 import PropTypes from "prop-types";
 import arrow from "../../assets/icons/arrow.svg";
 
@@ -9,7 +8,7 @@ const calculateStyles = (index, rotationIndex, iconAngle) => {
   const x = 300 * Math.cos(angle);
   const y = 300 * Math.sin(angle);
   const positionY = (index + rotationIndex) % iconsStack.length === 0 ? '-150' : `${y}`;
-  const scale = (index + rotationIndex) % iconsStack.length === 0 ? 'scale(1.6)' : '';
+  const scale = (index + rotationIndex) % iconsStack.length === 0 ? 'scale(1.5)' : '';
   const zIndex = (index + rotationIndex) % iconsStack.length === 0 ? '10' : '1';
   const rotation = x / iconsStack.length;
 

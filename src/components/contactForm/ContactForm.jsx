@@ -34,6 +34,7 @@ export const ContactForm = () => {
             placeholder="Nom*"
             className="contact-form__input"
             onChange={(e) => setName(e.target.value)}
+            required
           />
         </div>
         <div className="contact-form__wrapper">
@@ -46,6 +47,7 @@ export const ContactForm = () => {
             placeholder="Email*"
             className="contact-form__input"
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
         <div className="contact-form__wrapper">
@@ -61,6 +63,7 @@ export const ContactForm = () => {
             placeholder="Message*"
             onInput={(e) => autoResize(e.target)}
             onChange={(e) => setMessage(e.target.value)}
+            required
           ></textarea>
         </div>
         <input

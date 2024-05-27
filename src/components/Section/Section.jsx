@@ -7,19 +7,32 @@ import { useIntersectionObserver } from "../../utils/hooks/useIntersectionObserv
 
 export const Section = ({ id, title, subTitle, tag, children }) => {
   const ref = useRef();
-  const isVisible = useIntersectionObserver(ref, { threshold: 0.010 });
+  const isVisible = useIntersectionObserver(ref, { threshold: 0.01 });
   return (
     <section
       ref={ref}
       id={id}
       className={`section ${id} ${isVisible ? "section--display" : ""}`}
     >
-        <picture className="section-title__overlay">
-							<source media="(min-width: 1024px)" srcSet={bgSectionTitleDesktop} type="image/png"/>
-							<source media="(min-width: 500px)" srcSet={bgSectionTitleTablet} type="image/png"/>
-							<img src={bgSectionTitleMobile} className="section-title__overlay-img"
-								alt="Background section title" width="100%" height="auto"/>
-						</picture>
+      <picture className="section-title__overlay">
+        <source
+          media="(min-width: 1024px)"
+          srcSet={bgSectionTitleDesktop}
+          type="image/png"
+        />
+        <source
+          media="(min-width: 500px)"
+          srcSet={bgSectionTitleTablet}
+          type="image/png"
+        />
+        <img
+          src={bgSectionTitleMobile}
+          className="section-title__overlay-img"
+          alt="Background section title"
+          width="100%"
+          height="auto"
+        />
+      </picture>
 
       {tag && <span className="section__tag tag">Disponible</span>}
       <div className="section__title-wrapper">
