@@ -9,22 +9,22 @@ export const SocialsLinks = () => {
         <div className="social-links">
             <ul className="social-links__list">
                 <li className="social-links__item">
-                    <NavLink to="/">
+                    <NavLink to="https://github.com/Ax-07">
                         <img src={github} alt="icon github" />
                     </NavLink>
                 </li>
                 <li className="social-links__item">
-                    <NavLink to="/">
+                    <NavLink to="https://www.linkedin.com/in/xavier-affringue-374937267">
                         <img src={linkedin} alt="icon linkedin" />
                     </NavLink>
                 </li>
                 {/* <li className="social-links__item">
-                    <NavLink to="/">
+                    <NavLink to="https://codepen.io/ax-07">
                         <img src={codePen} alt="icon codepen" />
                     </NavLink>
                     </li>
                 <li className="social-links__item">
-                    <NavLink to="/">
+                    <NavLink to="https://www.figma.com/files/user/1207400583489876966?fuid=1207400583489876966">
                         <img src={figma} alt="icon figma" />
                     </NavLink>
                 </li> */}
