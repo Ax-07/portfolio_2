@@ -18,23 +18,23 @@ import cSharp from '../../assets/icons/stacks/Csharp.png';
 import express from '../../assets/icons/stacks/Express Js.png';
 import postgres from '../../assets/icons/stacks/Postgres.png';
 
-export const HtmlIcon = () => <img src={html} alt='html icon' className='stack__icon' />;
-export const JavascriptIcon = () => <img src={javascript} alt='javascript icon' className='stack__icon' />;
-export const CssIcon = () => <img src={css} alt='css icon' className='stack__icon' />;
-export const ReactIcon = () => <img src={react} alt='react icon' className='stack__icon' />;
+export const HtmlIcon = () => <img src={html} alt='Icône HTML' className='stack__icon' />;
+export const JavascriptIcon = () => <img src={javascript} alt='Icône javascript' className='stack__icon' />;
+export const CssIcon = () => <img src={css} alt='Icône css' className='stack__icon' />;
+export const ReactIcon = () => <img src={react} alt='Icône react' className='stack__icon' />;
 export const ReactRouterIcon = () => <img src={reactRouter} alt='react router icon' className='stack__icon' />;
-export const SassIcon = () => <img src={sass} alt='sass icon' className='stack__icon' />;
-export const NodeIcon = () => <img src={nodeJs} alt='node icon' className='stack__icon' />;
-export const ExpressIcon = () => <img src={express} alt='express icon' className='stack__icon' />;
-export const ViteIcon = () => <img src={viteJs} alt='vite icon' className='stack__icon' />;
-export const MongodbIcon = () => <img src={mongoDb} alt='mongodb icon' className='stack__icon' />;
-export const PostgresIcon = () => <img src={postgres} alt='postgres icon' className='stack__icon' />;
-export const FigmaIcon = () => <img src={figma} alt='figma icon' className='stack__icon' />;
-export const LinkedinIcon = () => <img src={linkedin} alt='linkedin icon' className='stack__icon' />;
-export const GlobeIcon = () => <img src={faGlobe} alt='globe icon' className='stack__icon' />;
-export const CodepenIcon = () => <img src={codepen} alt='codepen icon' className='stack__icon' />;
-export const GithubIcon = () => <img src={github} alt='github icon' className='stack__icon' />;
-export const CSharpIcon = () => <img src={cSharp} alt='cSharp icon' className='stack__icon' />;
+export const SassIcon = () => <img src={sass} alt='Icône sass' className='stack__icon' />;
+export const NodeIcon = () => <img src={nodeJs} alt='Icône node' className='stack__icon' />;
+export const ExpressIcon = () => <img src={express} alt='Icône express' className='stack__icon' />;
+export const ViteIcon = () => <img src={viteJs} alt='Icône vite' className='stack__icon' />;
+export const MongodbIcon = () => <img src={mongoDb} alt='Icône mongodb' className='stack__icon' />;
+export const PostgresIcon = () => <img src={postgres} alt='Icône postgres' className='stack__icon' />;
+export const FigmaIcon = () => <img src={figma} alt='Icône figma' className='stack__icon' />;
+export const LinkedinIcon = () => <img src={linkedin} alt='Icône linkedin' className='stack__icon' />;
+export const GlobeIcon = () => <img src={faGlobe} alt='Icône globe' className='stack__icon' />;
+export const CodepenIcon = () => <img src={codepen} alt='Icône codepen' className='stack__icon' />;
+export const GithubIcon = () => <img src={github} alt='Icône github' className='stack__icon' />;
+export const CSharpIcon = () => <img src={cSharp} alt='Icône cSharp' className='stack__icon' />;
 
 export const iconsStack = [
   { name: 'html', component: <HtmlIcon />, description: 'HTML (Hypertext Markup Language) : le langage standard pour créer des pages web.' },
