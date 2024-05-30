@@ -76,7 +76,7 @@
     "articles": [
       {
         "title": "API",
-        "image": "/src/assets/images/api.png",
+        "image": "/images/api.png",
         "content": [
           "Une API (Application Programming Interface) est un ensemble de règles et de protocoles qui permettent à des logiciels de communiquer entre eux.",
           "J'ai utilisé une API pour récupérer les données de mon site web et les afficher dynamiquement."
@@ -84,7 +84,7 @@
       },
       {
         "title": "CMS",
-        "image": "/src/assets/images/cms.png",
+        "image": "/images/cms.png",
         "content": [
           "Un CMS (Content Management System) est un système de gestion de contenu qui permet de créer, modifier et publier du contenu sur un site web.",
           "J'ai mis en place un CMS pour permettre à l'utilisateur de modifier le contenu de mon site web facilement."
@@ -92,7 +92,7 @@
       },
       {
         "title": "Architecture MVC",
-        "image": "/src/assets/images/mvc.png",
+        "image": "/images/mvc.png",
         "content": [
           "L'architecture MVC (Modèle-Vue-Contrôleur) est un modèle de conception qui permet de séparer les données, la logique métier et l'interface utilisateur d'une application.",
           "J'ai développé mon site web en suivant une architecture MVC pour rendre mon code plus modulaire et plus facile à maintenir."
@@ -100,7 +100,7 @@
       },
       {
         "title": "Bus d'événements",
-        "image": "/src/assets/images/bus-event.png",
+        "image": "/images/bus-event.png",
         "content": [
           "Un bus d'événements est un modèle de conception qui facilite la communication entre les composants d'une application sans nécessiter que ces composants soient conscients les uns des autres.",
           "Il fonctionne en émettant des événements depuis une partie de l'application, qui sont ensuite écoutés et traités par d'autres parties de l'application.",
