@@ -8,27 +8,34 @@ const items = [
     title: "Intégration",
     description: "Intégration de maquettes",
     icon: integration,
+    alt: "integration",
   },
   {
     title: "Développement",
     description: "Développement de sites web",
     icon: faCode,
+    alt: "code",
   },
-  { title: "Design", description: "Design de sites web", icon: faPenNib },
+  { 
+    title: "Design", 
+    description: "Design de sites web", 
+    icon: faPenNib,
+    alt: "pen"
+  },
 ];
 
-const ServicesItem = ({ title, description, icon }) => {
+const ServicesItem = ({ title, description, icon, alt }) => {
   return (
     <li className="services__item">
         <span className="services__item-circle">
           <img
             src={icon}
-            alt="icon font awesome"
+            alt={`${alt} icon`}
             className="services__item-icon"
           />
           <img
             src={icon}
-            alt="icon font awesome"
+            alt={`${alt} icon blur`}
             className="services__item-icon services__item-icon--blur"
           />
         </span>
@@ -61,4 +68,5 @@ ServicesItem.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
+  alt: PropTypes.string,
 };
