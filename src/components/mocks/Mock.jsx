@@ -6,7 +6,7 @@ export const Mock = ({ type, size, imgsrc, alt }) => {
     <div className={`mock-${type} ${size ? `mock-${type}--${size}` : ""}`}>
       <div className="mock__content">
         {type === "mobile" ? (
-          <img src={statusBar} alt="" className="mock-mobile__statusbar" />
+          <img src={statusBar} alt="status bar iphone" className="mock-mobile__statusbar" />
         ) : (
           ""
         )}
