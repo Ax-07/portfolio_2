@@ -57,6 +57,7 @@ export const Services = () => {
             title={item.title}
             description={item.description}
             icon={item.icon}
+            alt={item.alt}
           />
         ))}
       </ul>
