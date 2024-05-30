@@ -103,6 +103,7 @@
             height: 100%;
 
             &>img {
+                max-width: 392px;
                 padding: 100px;
                 backdrop-filter: blur(15px);
                 background: rgba(255, 255, 255, 0.05);
