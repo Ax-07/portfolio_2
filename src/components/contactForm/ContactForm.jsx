@@ -27,7 +27,7 @@ export const ContactForm = () => {
         <div className="contact-form__wrapper">
           <label htmlFor="name" className="contact-form__label">
             <img src={faUser} alt="icon user" />
-            <span hidden>icon user</span>
+            <span hidden>user</span>
           </label>
           <input
             type="text"
@@ -41,7 +41,7 @@ export const ContactForm = () => {
         <div className="contact-form__wrapper">
           <label htmlFor="email" className="contact-form__label">
             <img src={faEnvelope} alt="icon envelope" />
-            <span hidden>icon envelope</span>
+            <span hidden>envelope</span>
           </label>
           <input
             type="email"
@@ -55,7 +55,7 @@ export const ContactForm = () => {
         <div className="contact-form__wrapper">
           <label htmlFor="message" className="contact-form__label">
             <img src={faMessage} alt="icon message" />
-            <span hidden>icon message</span>
+            <span hidden>message</span>
           </label>
           <textarea
             className="contact-form__input"
