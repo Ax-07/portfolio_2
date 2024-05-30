@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <section id="hero" className="hero">
       <div className="hero__wrapper">
-        <TextAnimation text="Affringue Xavier" />
+        <h1><TextAnimation text="Affringue Xavier" /></h1>
         <SlideInTextAnimation text="Développeur web" />
         <Tag text={"Disponible"} />
       </div>
