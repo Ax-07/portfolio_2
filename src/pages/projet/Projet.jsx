@@ -84,7 +84,7 @@ const Articles = ({articles}) => {
       {articles?.map((article, index) => (
         <article key={index} className="projet-page__article">
           <div className="projet-page__article__img">
-            <img src={article.image} alt={`${article.title}`} />
+            <img src={article.image} alt={`illustration de l'article ${article.title}`} />
           </div>
           <aside className="projet-page__article__content">
           <h3 className="projet-page__article__title">{article.title}</h3>
