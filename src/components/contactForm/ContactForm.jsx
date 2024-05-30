@@ -26,7 +26,8 @@ export const ContactForm = () => {
         <form className="contact-form" onSubmit={onSubmit}>
         <div className="contact-form__wrapper">
           <label htmlFor="name" className="contact-form__label">
-            <img src={faUser} alt="" />
+            <img src={faUser} alt="icon user" />
+            <span hidden>icon user</span>
           </label>
           <input
             type="text"
@@ -39,7 +40,8 @@ export const ContactForm = () => {
         </div>
         <div className="contact-form__wrapper">
           <label htmlFor="email" className="contact-form__label">
-            <img src={faEnvelope} alt="" />
+            <img src={faEnvelope} alt="icon envelope" />
+            <span hidden>icon envelope</span>
           </label>
           <input
             type="email"
@@ -52,7 +54,8 @@ export const ContactForm = () => {
         </div>
         <div className="contact-form__wrapper">
           <label htmlFor="message" className="contact-form__label">
-            <img src={faMessage} alt="" />
+            <img src={faMessage} alt="icon message" />
+            <span hidden>icon message</span>
           </label>
           <textarea
             className="contact-form__input"
