@@ -50,7 +50,7 @@ export const Projet = () => {
             <h1 className="projet-page__title">{projet.title}</h1>
             <h2 className="projet-page__subTitle">{projet.subTitle}</h2>
           </div>
-          <p className="projet-page__description">{projet.description}</p>
+          <h3 className="projet-page__description">{projet.description}</h3>
           <SkillTarget objectif={projet.objectif} />
           <Articles articles={projet.articles} />
         </div>
@@ -63,7 +63,7 @@ export const Projet = () => {
 const SkillTarget = ({objectif}) => {
   return (
     <div className="projet-page__skill-target">
-      <h3 className="projet-page__skill-target__title">Compétences ciblé :</h3>
+      <h4 className="projet-page__skill-target__title">Compétences ciblé :</h4>
       <ul className="projet-page__skill-target__list">
         {objectif?.map((objectif) => (
           <li key={objectif} className="projet-page__skill-target__item">
@@ -87,7 +87,7 @@ const Articles = ({articles}) => {
             <img src={article.image} alt={`illustration de l'article ${article.title}`} />
           </div>
           <aside className="projet-page__article__content">
-          <h3 className="projet-page__article__title">{article.title}</h3>
+          <h5 className="projet-page__article__title">{article.title}</h5>
           {article.content?.map((content, index) => (
             <p key={index}>{content}</p>
           ))}
@@ -104,7 +104,7 @@ Articles.propTypes = {
 const Conclusion = ({conclusion}) => {
   return (
     <div className="projet-page__conclusion">
-      <h3 className="projet-page__conclusion__title">Conclusion</h3>
+      <h5 className="projet-page__conclusion__title">Conclusion</h5>
       {conclusion?.map((conclusion, index)=> (
         <p key={index}>{conclusion}</p>
       ))}
