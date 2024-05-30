@@ -2188,6 +2188,7 @@ button:hover::before,
   height: 100%;
 }
 .projet-page__article__img > img {
+  max-width: 392px;
   padding: 100px;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
