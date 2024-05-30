@@ -13,7 +13,7 @@ export const Hero = () => {
         <Tag text={"Disponible"} />
       </div>
       <Link to="/contact" className={`hero__btn btn`}>
-        Contactez moi <img src={faEnvelope} alt="" className="hero__btn-icon" />
+        Contactez moi <img src={faEnvelope} alt="Icône envelope" className="hero__btn-icon" />
       </Link>
     </section>
   );
