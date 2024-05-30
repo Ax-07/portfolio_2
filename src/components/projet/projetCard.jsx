@@ -6,7 +6,6 @@ import { StackList } from "../stacksList/StackList";
 export const ProjetCard = (projet) => {
   return (
     <article className="projet-card">
-      {/* <img src={bgPicture} alt="" className="projet-card__background"/> */}
       <div className="projet-card__mocks">
         <Mock type={"desktop"} size="sm" imgsrc={projet.pictures.img1.desktop} alt={projet.title} />
         <Mock type={"mobile"} size="sm" imgsrc={projet.pictures.img2.desktop} alt={projet.title} />
