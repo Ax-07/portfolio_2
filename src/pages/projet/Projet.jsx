@@ -26,13 +26,13 @@ export const Projet = () => {
             type={"desktop"}
             size={"sm"}
             imgsrc={projet.pictures.img1.desktop}
-            alt={projet.title}
+            alt={`${projet.title} mockup desktop`}
           />
           <Mock
             type={"mobile"}
             size={"sm"}
             imgsrc={projet.pictures.img2.desktop}
-            alt={projet.title}
+            alt={`${projet.title} mockup mobile`}
           />
         </div>
         <div className="projet-page__links">
@@ -84,7 +84,7 @@ const Articles = ({articles}) => {
       {articles?.map((article, index) => (
         <article key={index} className="projet-page__article">
           <div className="projet-page__article__img">
-            <img src={article.image} alt="" />
+            <img src={article.image} alt={`${article.title}`} />
           </div>
           <aside className="projet-page__article__content">
           <h3 className="projet-page__article__title">{article.title}</h3>
