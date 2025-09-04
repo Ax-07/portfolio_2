@@ -39,10 +39,17 @@
         &:focus {
             outline: none;
         }
+
+        &:-internal-autofill-selected {
+            background-color: transparent !important;
+        }
     }
 
     &__btn {
         margin-top: 60px;
         margin-bottom: 11px
+    }
+    &__btn:disabled {
+        cursor: not-allowed;
     }
 }
