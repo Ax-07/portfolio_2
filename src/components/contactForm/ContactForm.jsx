@@ -185,7 +185,7 @@ export const ContactForm = () => {
 
       <button
         type="submit"
-        className="contact-form__btn btn"
+        className={`contact-form__btn btn ${isLoading ? 'loading' : ''}`}
         role="button"
         disabled={!isFormValid() || isLoading}
       >
